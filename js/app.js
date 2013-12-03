@@ -5,8 +5,8 @@ $(function(){
 		return "<img src='img/face" + i + ".jpeg'></img>";
 	};
 
-	var renderImg = function(){
-		var imgPath = makeImgPath(0);
+	var renderImg = function(i){
+		var imgPath = makeImgPath(i);
 		$(".container-img").html(imgPath);
 	}
 
@@ -16,7 +16,7 @@ $(function(){
 
 
 	var setup = function(){
-		renderImg();
+		renderImg(0);
 	};
 
 	setup();
