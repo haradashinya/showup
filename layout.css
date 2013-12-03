@@ -2,3 +2,9 @@ body {
     background: black;
     color: white;
 }
+
+
+.container-img img {
+	width: 100%;
+	height: 100%;
+}

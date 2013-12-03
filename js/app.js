@@ -1,4 +1,5 @@
 $(function(){
+	var idx = 0;
 
 
 	var makeImgPath = function(i){
@@ -12,11 +13,17 @@ $(function(){
 
 
 
+	setInterval(function(){
+		renderImg(idx);
+		idx += 1;
+		if (idx === 2) idx = 0;
+	},1000);
 
 
 
 	var setup = function(){
 		renderImg(0);
+		idx += 1;
 	};
 
 	setup();
